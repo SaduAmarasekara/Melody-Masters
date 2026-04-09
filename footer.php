@@ -10,34 +10,34 @@
                 <a href="#" class="social-pill"><i class="fab fa-facebook-f"></i></a>
                 <a href="#" class="social-pill"><i class="fab fa-instagram"></i></a>
                 <a href="#" class="social-pill"><i class="fab fa-youtube"></i></a>
-                <a href="#" class="social-pill"><i class="fab fa-x-twitter"></i></a>
+              
             </div>
         </div>
 
         <div class="footer-section links">
-            <h4>Curation</h4>
+            <h4>Quick Links</h4>
             <ul>
                 <li><a href="index.php">The Studio</a></li>
                 <li><a href="shop.php">The Showroom</a></li>
-                <li><a href="register.php">Join the Elite</a></li>
-                <li><a href="cart.php">Your Collection</a></li>
+                <li><a href="register.php">Create Account</a></li>
+                <li><a href="cart.php">My Collection</a></li>
             </ul>
         </div>
 
         <div class="footer-section contact">
-            <h4>Concierge</h4>
+            <h4>Contact Us</h4>
             <div class="contact-card">
                 <div class="c-item">
                     <div class="c-icon"><i class="fas fa-envelope-open-text"></i></div>
-                    <p>concierge@melodymasters.com</p>
+                    <p>info@melodymasters.com</p>
                 </div>
                 <div class="c-item">
                     <div class="c-icon"><i class="fas fa-phone-volume"></i></div>
-                    <p>+94 112 345 678</p>
+                    <p>+94 721 134 567</p>
                 </div>
                 <div class="c-item">
                     <div class="c-icon"><i class="fas fa-map-location-dot"></i></div>
-                    <p>123 Music Lane, Colombo, SL</p>
+                    <p>No.200, Colombo Rd,Padukka,SL</p>
                 </div>
             </div>
         </div>

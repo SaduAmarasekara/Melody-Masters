@@ -80,7 +80,7 @@ if (session_status() === PHP_SESSION_NONE) {
             <?php else: ?>
                 <div class="auth-group">
                     <a href="login.php" class="btn-login-posh">Sign In</a>
-                    <a href="register.php" class="btn-register-posh">Join Elite</a>
+                    <a href="register.php" class="btn-register-posh">Create Account</a>
                 </div>
             <?php endif; ?>
         </div>
