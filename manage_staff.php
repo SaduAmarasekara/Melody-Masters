@@ -231,7 +231,7 @@ $result = $conn->query($query);
             <h2>Staff Directorate</h2>
             <p style="color: var(--text-muted); margin-top: 5px;">Configure internal access and manage organizational personnel.</p>
         </div>
-        <a href="add_staff.php" class="btn-add"><i class="fas fa-user-plus"></i> Initialize Personnel</a>
+        <a href="add_staff.php" class="btn-add"><i class="fas fa-user-plus"></i> Add Staff</a>
     </div>
 
     <form method="GET" class="search-shelf">

@@ -175,11 +175,11 @@ if ($current_role === 'admin') {
                         <td>
                             <?php if($row['stock_quantity'] <= 5): ?>
                                 <span class="stock-badge low-stock">
-                                    <i class="fas fa-bolt"></i> Low Portfolio: <?php echo $row['stock_quantity']; ?>
+                                    <i class="fas fa-bolt"></i> Low stock: <?php echo $row['stock_quantity']; ?>
                                 </span>
                             <?php else: ?>
                                 <span class="stock-badge in-stock">
-                                    <i class="fas fa-check-circle"></i> Secure: <?php echo $row['stock_quantity']; ?>
+                                    <i class="fas fa-check-circle"></i> In stock: <?php echo $row['stock_quantity']; ?>
                                 </span>
                             <?php endif; ?>
                         </td>

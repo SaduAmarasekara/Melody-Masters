@@ -23,7 +23,7 @@ if (isset($_GET['delete_id'])) {
     $stmt->bind_param("i", $review_id);
     
     if ($stmt->execute()) {
-        $message = "<div class='alert success'><i class='fas fa-check-circle'></i> Review purged from registry successfully!</div>";
+        $message = "<div class='alert success'><i class='fas fa-check-circle'></i> Review deleted from registry successfully!</div>";
     } else {
         $message = "<div class='alert error'><i class='fas fa-times-circle'></i> System Error: Could not delete the review.</div>";
     }
@@ -260,8 +260,8 @@ $result = $conn->query($query);
                         <td style="text-align: right;">
                             <a href="manage_reviews.php?delete_id=<?php echo $row['review_id']; ?>" 
                                class="btn-delete" 
-                               onclick="return confirm('Administrative Alert: Are you sure you want to permanently purge this testimonial?')">
-                                <i class="fas fa-eraser"></i> Purge
+                               onclick="return confirm('Administrative Alert: Are you sure you want to permanently delete this testimonial?')">
+                                <i class="fas fa-eraser"></i> Delete
                             </a>
                         </td>
                     </tr>

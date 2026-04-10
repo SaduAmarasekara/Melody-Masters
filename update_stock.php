@@ -215,7 +215,7 @@ $product = $res->fetch_assoc();
             <?php if($product['stock_quantity'] < 5): ?>
                 <div class="warning-box">
                     <i class="fas fa-triangle-exclamation" style="font-size: 1.2rem;"></i>
-                    <span><strong>Low Portfolio Alert</strong><br>Only <?php echo $product['stock_quantity']; ?> units remaining in the showroom.</span>
+                    <span><strong>Low Stock Alert</strong><br>Only <?php echo $product['stock_quantity']; ?> units remaining in the showroom.</span>
                 </div>
             <?php endif; ?>
 

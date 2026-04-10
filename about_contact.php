@@ -167,7 +167,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit_inquiry'])) {
         <div class="glass-card">
             <div class="about-split">
                 <div class="chief-img-box">
-                    <img src="uploads/alex.jpg" alt="Melody Masters Founder">
+                    <img src="uploads/melocontact.jpg" alt="Melody Masters Founder">
                     <div class="curator-tag">FOUNDING CURATOR</div>
                 </div>
                 <div>
@@ -195,15 +195,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit_inquiry'])) {
                 <div style="margin-top: 40px;">
                     <div style="display: flex; gap: 20px; margin-bottom: 30px;">
                         <i class="fas fa-map-marker-alt" style="color: var(--teal); font-size: 1.5rem;"></i>
-                        <p>100 Malwana Lane, Colombo, Sri Lanka</p>
+                        <p>No.200, Colombo Rd,Padukka,Sri Lanka</p>
                     </div>
                     <div style="display: flex; gap: 20px; margin-bottom: 30px;">
                         <i class="fas fa-phone-alt" style="color: var(--teal); font-size: 1.5rem;"></i>
-                        <p>+94 741122153</p>
+                        <p>+94 721 134 567</p>
                     </div>
                     <div style="display: flex; gap: 20px;">
                         <i class="fas fa-envelope" style="color: var(--teal); font-size: 1.5rem;"></i>
-                        <p>curator@melodymasters.com</p>
+                        <p>info@melodymasters.com</p>
                     </div>
                 </div>
             </div>
@@ -224,7 +224,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit_inquiry'])) {
                     <div class="field" style="margin-bottom: 30px;">
                         <textarea name="message" rows="5" placeholder="Tell us about your musical needs..." required></textarea>
                     </div>
-                    <button type="submit" name="submit_inquiry" class="btn-send">Initiate Contact</button>
+                    <button type="submit" name="submit_inquiry" class="btn-send">Send Message</button>
                 </form>
             </div>
         </div>
@@ -233,7 +233,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit_inquiry'])) {
     <div class="chat-widget">
         <div class="chat-window" id="chatWindow">
             <div class="chat-header">
-                <span>MAESTRO CHAT</span>
+                <span>Melody Assistant </span>
                 <i class="fas fa-times" onclick="toggleChat()" style="cursor: pointer;"></i>
             </div>
             <div class="chat-body">

@@ -271,7 +271,7 @@ if (isset($_POST['place_order'])) {
             <div class="form-group">
                 <label>Method of Settlement</label>
                 <select name="payment_method">
-                    <option value="COD">Pay on Collection / Delivery</option>
+                    <option value="COD">cash on Delivery</option>
                     <option value="Card" disabled>Digital Payment Gateway (Coming Soon)</option>
                 </select>
             </div>
