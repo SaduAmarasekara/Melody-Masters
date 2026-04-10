@@ -170,7 +170,7 @@ if ($current_role === 'admin') {
                             </div>
                         </td>
                         <td class="price-text">
-                            £<?php echo number_format($row['price'], 2); ?>
+                            $<?php echo number_format($row['price'], 2); ?>
                         </td>
                         <td>
                             <?php if($row['stock_quantity'] <= 5): ?>

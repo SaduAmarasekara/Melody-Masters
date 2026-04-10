@@ -180,7 +180,7 @@ if (isset($_SESSION['user_id'])) {
             <span class="brand-label"><?php echo htmlspecialchars($product['brand'] ?? 'Premium Collection'); ?></span>
             <h1 class="product-title"><?php echo $product['product_name']; ?></h1>
 
-            <div class="price-box">£<?php echo number_format($product['price'], 2); ?></div>
+            <div class="price-box">$<?php echo number_format($product['price'], 2); ?></div>
 
             <div class="stock-indicator" style="margin-bottom: 20px;">
                 <?php if ($available_stock > 0): ?>

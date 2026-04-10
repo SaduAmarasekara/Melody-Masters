@@ -297,7 +297,7 @@ if ($current_role === 'admin') {
                         <td><span class="order-id">#<?php echo str_pad($row['order_id'], 5, '0', STR_PAD_LEFT); ?></span></td>
                         <td class="customer-name"><?php echo htmlspecialchars($row['full_name']); ?></td>
                         <td style="color: var(--text-muted);"><?php echo date('d M, Y', strtotime($row['order_date'])); ?></td>
-                        <td class="price-text">£<?php echo number_format($row['total_amount'], 2); ?></td>
+                        <td class="price-text">$<?php echo number_format($row['total_amount'], 2); ?></td>
                         <td>
                             <span class="status-pill" style="background: <?php echo $color; ?>15; color: <?php echo $color; ?>; border: 1px solid <?php echo $color; ?>40;">
                                 <i class="fas fa-circle"></i> <?php echo $status; ?>

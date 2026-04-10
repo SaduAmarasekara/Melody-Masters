@@ -689,7 +689,7 @@ $categories = $conn->query("SELECT * FROM categories");
                                 <span class="r-count">(<?php echo $r_data['count'] ?? 0; ?>)</span>
                             </div>
 
-                            <div class="price-tag">£<?php echo number_format($row['price'], 2); ?></div>
+                            <div class="price-tag">$<?php echo number_format($row['price'], 2); ?></div>
 
                             <div class="stock-indicator">
                                 <?php if($row['stock_quantity'] > 5): ?>

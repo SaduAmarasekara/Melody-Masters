@@ -447,7 +447,7 @@ else { include 'staff_sidebar.php'; }
 
             <div class="field-row">
                 <div class="form-field">
-                    <label>Price (£)</label>
+                    <label>Price ($)</label>
                     <div class="input-wrap">
                         <i class="fas fa-sterling-sign"></i>
                         <input type="number" step="0.01" name="price" placeholder="0.00" required>

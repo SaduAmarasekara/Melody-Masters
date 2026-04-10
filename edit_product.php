@@ -279,7 +279,7 @@ if (isset($_SESSION['role']) && strtolower($_SESSION['role']) === 'admin') {
                     <input type="text" name="brand" value="<?php echo htmlspecialchars($product['brand']); ?>" required placeholder="Brand label">
                 </div>
 
-                <label>Valuation (GBP £)</label>
+                <label>Valuation (GBP $)</label>
                 <div class="input-wrapper">
                     <i class="fas fa-sterling-sign"></i>
                     <input type="number" step="0.01" name="price" value="<?php echo $product['price']; ?>" required placeholder="0.00">

@@ -233,7 +233,7 @@ if (isset($_POST['add_to_cart'])) {
                                     </div>
                                 </div>
                             </td>
-                            <td>£<?php echo number_format($product['price'], 2); ?></td>
+                            <td>$<?php echo number_format($product['price'], 2); ?></td>
                             <td>
                                 <input type="number" name="qty[<?php echo $id; ?>]" 
                                        value="<?php echo $qty; ?>" 
@@ -244,7 +244,7 @@ if (isset($_POST['add_to_cart'])) {
                                     <span class="stock-warning">Max reached</span>
                                 <?php endif; ?>
                             </td>
-                            <td style="font-weight:600; color:#fff;">£<?php echo number_format($subtotal, 2); ?></td>
+                            <td style="font-weight:600; color:#fff;">$<?php echo number_format($subtotal, 2); ?></td>
                             <td>
                                 <a href="cart.php?remove=<?php echo $id; ?>" class="remove-btn" onclick="return confirm('Remove this item?')">
                                     <i class="fas fa-times"></i>
@@ -278,14 +278,14 @@ if (isset($_POST['add_to_cart'])) {
             $shipping_msg = "Digital Delivery (Free)";
         } else {
             $shipping = ($total > $shipping_limit) ? 0 : 15.00; 
-            $shipping_msg = ($shipping == 0) ? "FREE" : "£" . number_format($shipping, 2);
+            $shipping_msg = ($shipping == 0) ? "FREE" : "$" . number_format($shipping, 2);
         }
         ?>
 
         <?php if($has_physical_item): ?>
             <?php if($total < $shipping_limit): ?>
                 <div class="promo-box">
-                    <i class="fas fa-bolt" style="margin-right:8px;"></i> Spend <b>£<?php echo ($shipping_limit - $total); ?></b> more for <b>Free Shipping!</b>
+                    <i class="fas fa-bolt" style="margin-right:8px;"></i> Spend <b>$<?php echo ($shipping_limit - $total); ?></b> more for <b>Free Shipping!</b>
                 </div>
             <?php else: ?>
                 <div class="promo-box" style="background:rgba(0, 229, 160, 0.08); border-color:#00e5a0; color:#00e5a0;">
@@ -296,7 +296,7 @@ if (isset($_POST['add_to_cart'])) {
 
         <div class="summary-row">
             <span>Subtotal</span>
-            <span>£<?php echo number_format($total, 2); ?></span>
+            <span>$<?php echo number_format($total, 2); ?></span>
         </div>
         <div class="summary-row">
             <span>Shipping</span>
@@ -305,7 +305,7 @@ if (isset($_POST['add_to_cart'])) {
 
         <div class="summary-row total-row">
             <span>Total</span>
-            <span>£<?php echo number_format($total + $shipping, 2); ?></span>
+            <span>$<?php echo number_format($total + $shipping, 2); ?></span>
         </div>
 
         <a href="checkout.php" class="btn-checkout">Proceed to Checkout</a>

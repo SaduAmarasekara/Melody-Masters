@@ -221,7 +221,7 @@ $result = $conn->query($sql);
                 <div class="order-right" style="text-align: right;">
                     <div style="margin-bottom: 20px;">
                         <div style="color: var(--text-muted); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 4px;">Total Amount</div>
-                        <div class="price-text">£<?php echo number_format($row['total_amount'], 2); ?></div>
+                        <div class="price-text">$<?php echo number_format($row['total_amount'], 2); ?></div>
                     </div>
 
                     <div class="btn-group">

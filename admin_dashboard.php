@@ -294,7 +294,7 @@ $staffCount = $conn->query("SELECT COUNT(*) as count FROM users WHERE role = 'St
             <div class="card-glow"></div>
             <div class="stat-icon"><i class="fas fa-sterling-sign"></i></div>
             <h4>Total Revenue</h4>
-            <h2>£<?php echo number_format($income['total'] ?? 0, 2); ?></h2>
+            <h2>$<?php echo number_format($income['total'] ?? 0, 2); ?></h2>
             <p class="stat-sub">From delivered orders</p>
         </div>
 
@@ -351,7 +351,7 @@ $staffCount = $conn->query("SELECT COUNT(*) as count FROM users WHERE role = 'St
 const chartData = {
     labels: ['Week 1', 'Week 2', 'Week 3', 'Week 4'],
     datasets: [{
-        label: 'Revenue (£)',
+        label: 'Revenue ($)',
         data: [400, 900, 600, <?php echo $income['total'] ?? 0; ?>],
         backgroundColor: [
             'rgba(0,229,195,0.25)',
@@ -388,14 +388,14 @@ const chartOptions = {
             cornerRadius: 12,
             displayColors: false,
             callbacks: {
-                label: ctx => `  £${ctx.parsed.y.toLocaleString()}`
+                label: ctx => `  $${ctx.parsed.y.toLocaleString()}`
             }
         }
     },
     scales: {
         y: {
             grid: { color: 'rgba(255,255,255,0.04)', drawBorder: false },
-            ticks: { color: '#5a5a72', font: { size: 12 }, callback: v => '£' + v.toLocaleString() },
+            ticks: { color: '#5a5a72', font: { size: 12 }, callback: v => '$' + v.toLocaleString() },
             border: { display: false }
         },
         x: {

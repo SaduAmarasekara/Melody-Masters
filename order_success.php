@@ -248,8 +248,8 @@ $items_result = $conn->query($items_sql);
                         ?>
                     </td>
                     <td style="color: #fff;">x<?php echo $item['quantity']; ?></td>
-                    <td style="color: #fff;">£<?php echo number_format($item['unit_price'], 2); ?></td>
-                    <td style="text-align: right; font-weight: 700; color: var(--teal);">£<?php echo number_format($item['unit_price'] * $item['quantity'], 2); ?></td>
+                    <td style="color: #fff;">$<?php echo number_format($item['unit_price'], 2); ?></td>
+                    <td style="text-align: right; font-weight: 700; color: var(--teal);">$<?php echo number_format($item['unit_price'] * $item['quantity'], 2); ?></td>
                 </tr>
                 <?php endwhile; ?>
             </tbody>
@@ -265,7 +265,7 @@ $items_result = $conn->query($items_sql);
             <div class="total-box">
                 <div class="row">
                     <span>Subtotal</span>
-                    <span style="color: #fff;">£<?php echo number_format($order['total_amount'] - $order['shipping_cost'], 2); ?></span>
+                    <span style="color: #fff;">$<?php echo number_format($order['total_amount'] - $order['shipping_cost'], 2); ?></span>
                 </div>
                 <div class="row">
                     <span>Shipping Fee</span>
@@ -274,14 +274,14 @@ $items_result = $conn->query($items_sql);
                         if ($order['shipping_cost'] == 0) {
                             echo "<b style='color:var(--success)'>FREE</b>";
                         } else {
-                            echo "<span style='color:#fff;'>£" . number_format($order['shipping_cost'], 2) . "</span>";
+                            echo "<span style='color:#fff;'>$" . number_format($order['shipping_cost'], 2) . "</span>";
                         }
                         ?>
                     </span>
                 </div>
                 <div class="row grand-total">
                     <span>Total</span>
-                    <span>£<?php echo number_format($order['total_amount'], 2); ?></span>
+                    <span>$<?php echo number_format($order['total_amount'], 2); ?></span>
                 </div>
             </div>
         </div>

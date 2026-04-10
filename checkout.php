@@ -292,7 +292,7 @@ if (isset($_POST['place_order'])) {
             <?php foreach ($cart_items as $item): ?>
                 <div class="item-row">
                     <span><?php echo $item['name']; ?> <span class="badge-qty">x<?php echo $item['qty']; ?></span></span>
-                    <span style="color: #fff; font-weight: 700;">£<?php echo number_format($item['sub'], 2); ?></span>
+                    <span style="color: #fff; font-weight: 700;">$<?php echo number_format($item['sub'], 2); ?></span>
                 </div>
             <?php endforeach; ?>
         </div>
@@ -300,21 +300,21 @@ if (isset($_POST['place_order'])) {
         <div style="background: rgba(255,255,255,0.02); padding: 25px; border-radius: 20px; border: 1px solid rgba(255,255,255,0.03);">
             <div class="item-row" style="margin-bottom: 12px;">
                 <span>Portfolio Subtotal</span>
-                <span style="color:#fff;">£<?php echo number_format($total, 2); ?></span>
+                <span style="color:#fff;">$<?php echo number_format($total, 2); ?></span>
             </div>
             <div class="item-row" style="margin-bottom: 0;">
                 <span>Logistics Fee</span>
                 <span style="color: <?php echo ($shipping == 0) ? var_export('--success', true) : '#fff'; ?>; font-weight: 700;">
                     <?php 
                     if (!$has_physical_item) { echo "COMPLIMENTARY"; }
-                    else { echo ($shipping == 0) ? "COMPLIMENTARY" : "£" . number_format($shipping, 2); }
+                    else { echo ($shipping == 0) ? "COMPLIMENTARY" : "$" . number_format($shipping, 2); }
                     ?>
                 </span>
             </div>
 
             <div class="total-row">
                 <span>Total</span>
-                <span>£<?php echo number_format($grand_total, 2); ?></span>
+                <span>$<?php echo number_format($grand_total, 2); ?></span>
             </div>
         </div>
 

@@ -278,7 +278,7 @@ $featured_res = $conn->query("SELECT * FROM products ORDER BY product_id DESC LI
                     <div class="product-info">
                         <span style="color:var(--text-muted); font-size:0.7rem; letter-spacing:1px; text-transform:uppercase; margin-bottom:5px; display:block;"><?php echo $p['brand'] ?? 'Artisan Series'; ?></span>
                         <h4 style="font-family:'Playfair Display'; font-size:1.5rem; color:#fff; margin-bottom:15px;"><?php echo htmlspecialchars($p['product_name']); ?></h4>
-                        <span class="product-price">£<?php echo number_format($p['price'], 2); ?></span>
+                        <span class="product-price">$<?php echo number_format($p['price'], 2); ?></span>
                         <a href="product_details.php?id=<?php echo $p['product_id']; ?>" class="btn-view">View Details</a>
                     </div>
                 </div>
