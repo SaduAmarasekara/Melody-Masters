@@ -168,7 +168,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit_inquiry'])) {
             <div class="about-split">
                 <div class="chief-img-box">
                     <img src="uploads/melocontact.jpg" alt="Melody Masters Founder">
-                    <div class="curator-tag">FOUNDING CURATOR</div>
+                    <div class="curator-tag">STAY IN THE KNOW!</div>
                 </div>
                 <div>
                     <span class="tag">Our Heritage</span>
